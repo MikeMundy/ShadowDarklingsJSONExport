@@ -1,0 +1,129 @@
+BONUSES FOR WICH FOR www.ShadowDarklings.net:
+
+These bonuses are all gained via Witch Talent rolls. The versions given below are all for the 'standard' Talent that every Witch gets
+at each odd-numbered level, but a Witch will also recieve an extra Witch Talent if they are Human (see at the end for an example).
+Witches also gain Witch spells; an example is provided at the end of this file. 
+
+** All new standard Witch Talent Bonuses (gained for being a 1st level Knight)
+
+NOTE: The Witch's Familiar and Spellcasting abilities are not represented as bonuses, as every Witch has them and they include no choices or
+options. If the imported character is a Witch, you'll have to include Familiar and Spellcasting when you import them.
+
+* Roll 2: 1/day, teleport to your familiar's location as a move
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Witch",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "TeleportToFamiliar",
+    "bonusTo": "",
+    "bonusName": "TeleportToFamiliar"
+  }
+
+* Roll 3-7: +2 to Charisma stat or +1 to witch spellcasting checks
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Witch",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "Plus2CHAOrPlus1Casting",
+    "bonusTo": "CHA:+2",
+    "bonusName": "StatBonus"
+  }
+
+or
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Witch",
+      "sourceCategory": "Talent",
+      "gainedAtLevel": 1,
+      "name": "Plus2CHAOrPlus1Casting",
+      "bonusTo": "Witch",
+      "bonusName": "Plus1ToCastingSpells",
+      "bonusAmount": 1
+    }
+
+* Roll 8-9: Gain advantage on casting one spell you know
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Witch",
+    "sourceCategory": "Talent",
+    "name": "AdvOnCastOneSpell",
+    "bonusName": "Cauldron",
+    "bonusTo": "AdvOnCastOneSpell",
+    "gainedAtLevel": 1
+  }
+
+* Roll 10-11: Learn one additional witch spell of any tier you know
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Witch",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "LearnExtraSpell",
+    "bonusTo": "PickExtraSpell",
+    "bonusName": "Charm Person"
+  }
+
+* Roll 12: Choose a talent or +2 points to distribute to stats
+
+'Choose a Talent' Will be saved as the standard bonus chosen. 
+
++2 points to distribute is saved as a pair of stat bonuses:
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Witch",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "+2 Stat Points",
+    "bonusTo": "",
+    "bonusName": "+2 Stat Points"
+  },
+  {
+    "sourceType": "Class",
+    "sourceName": "Witch",
+    "sourceCategory": "Talent",
+    "name": "StatBonus-1",
+    "bonusName": "StatBonus",
+    "bonusTo": "STR:+1",
+    "gainedAtLevel": 1
+  },
+  {
+    "sourceType": "Class",
+    "sourceName": "Witch",
+    "sourceCategory": "Talent",
+    "name": "StatBonus-2",
+    "bonusName": "StatBonus",
+    "bonusTo": "DEX:+1",
+    "gainedAtLevel": 1
+  }
+
+** Example Human Ambition Witch Talent Bonus (gained for being a 1st level Human): 
+
+  {
+    "sourceType": "Ancestry",
+    "sourceName": "Human Ambition",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "TeleportToFamiliar",
+    "bonusTo": "",
+    "bonusName": "TeleportToFamiliar"
+  }
+
+** Example Witch Spell Bonus:
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Witch",
+    "sourceCategory": "Ability",
+    "name": "Spell: Witch, Tier 1, Spell 1",
+    "bonusName": "Cauldron",
+    "bonusTo": "Tier:1, Spell:1",
+    "gainedAtLevel": 1
+  }

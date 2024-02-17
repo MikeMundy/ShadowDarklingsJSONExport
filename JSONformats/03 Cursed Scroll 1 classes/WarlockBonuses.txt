@@ -1,0 +1,662 @@
+BONUSES FOR WARLOCKS FOR www.ShadowDarklings.net:
+
+Warning: The Warlock will be a massive pain in the arse to implement. I feel your pain. Don't blame me, this one's on Kelsey. 
+
+These bonuses are all gained via Warlock Talent and Boon rolls. The versions given below are all for the 'standard' Talent or Boon that every Warlock gets
+at each odd-numbered level, but a Warlock will also recieve an extra Warlock Talent or Boon if they are Human (see at the end for an example).
+
+** Warlock's Patron Bonus:
+This stores the Warlock's choice of patron:
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Patron",
+      "name": "Patron",
+      "bonusName": "Patron",
+      "bonusTo": "Almazzat",
+      "gainedAtLevel": 1
+    }
+
+All possible values for the bonusTo field are: "Almazzat", "Kytheros", "Mugdulblub", "Shune the Vile", "Titania", and "The Willowman"
+
+** Almazzat Patron Talents Bonuses:
+
+* Roll 2: 1/day, gain advantage on melee attacks for 3 rounds
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "ADVOnMelee3Rounds",
+      "bonusName": "ADVOnMelee3Rounds",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "Almazzat",
+      "boonSource": "InitialPatronBoon"
+    }
+
+* Roll 3-7: Learn to wield 1 melee weapon or get +1 to melee attacks
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "LearnMeleeWeaponOrPlusOneMeleeAtk",
+      "bonusName": "LearnWeapon",
+      "bonusTo": "Bastard sword",
+      "gainedAtLevel": 1,
+      "boonPatron": "Almazzat",
+      "boonSource": "InitialPatronBoon"
+    }
+
+ or
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "LearnMeleeWeaponOrPlusOneMeleeAtk",
+      "bonusName": "Plus1ToMeleeAttacks",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "Almazzat",
+      "boonSource": "InitialPatronBoon"
+    }  
+
+
+* Roll 8-9: +2 to Strength or Constitution stat, or +1 to melee damage
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "Plus2STROrCONOrPlus1MeleeDamage",
+      "bonusName": "StatBonus",
+      "bonusTo": "STR:+2",
+      "gainedAtLevel": 1,
+      "boonPatron": "Almazzat",
+      "boonSource": "InitialPatronBoon"
+    }
+
+or
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "Plus2STROrCONOrPlus1MeleeDamage",
+      "bonusName": "StatBonus",
+      "bonusTo": "CON:+2",
+      "gainedAtLevel": 1,
+      "boonPatron": "Almazzat",
+      "boonSource": "InitialPatronBoon"
+    }
+
+or
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "Plus2STROrCONOrPlus1MeleeDamage",
+      "bonusName": "Plus1ToMeleeDamage",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "Almazzat",
+      "boonSource": "InitialPatronBoon",
+      "bonusAmount": 1
+    }
+
+* Roll 10-11: Gain advantage on initiative rolls (reroll duplicates)
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "AdvOnInitiative",
+      "bonusName": "AdvOnInitiative",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "Almazzat",
+      "boonSource": "InitialPatronBoon"
+    }
+
+* Rol 12: Choose one option or +2 points to distribute to stats
+
+I cheated... ShadowDarklings doesn't actually let you roll a 12 on this table as it was becoming a nightmare to support the nested bonuses.
+
+
+** Kytheros Patron Talents Bonuses:
+
+* Roll 2: 1/day, force the GM to reroll a single roll
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "ForceDMReroll",
+      "bonusName": "ForceDMReroll",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "Kytheros",
+      "boonSource": "InitialPatronBoon"
+    }
+
+* Roll 3-7: Gain +1 to your AC through supernatural foresight
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "ForesightPlus1AC",
+      "bonusName": "ForesightPlus1AC",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "Kytheros",
+      "boonSource": "InitialPatronBoon"
+    }
+
+* Roll 8-9: +2 to Strength, Dexterity, or Wisdom stat
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "StatBonus",
+      "bonusName": "StatBonus",
+      "bonusTo": "STR:+2",
+      "gainedAtLevel": 1,
+      "boonPatron": "Kytheros",
+      "boonSource": "InitialPatronBoon"
+    }
+
+    Other bonusues have bonusTo = "DEX:+2" or "WIS:+2"
+
+* Roll 10-11: 3/day, add your WIS bonus to any roll (reroll duplicates)
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "AddWISToRolls",
+      "bonusName": "AddWISToRolls",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "Kytheros",
+      "boonSource": "InitialPatronBoon"
+    }
+
+* Roll 12: Choose one option or +2 points to distribute to stats
+
+I cheated... ShadowDarklings doesn't actually let you roll a 12 on this table as it was becoming a nightmare to support the nested bonuses.
+
+** Mugdulblub Patron Talents Bonuses:
+
+* Roll 2: 1/day, turn into a crawling puddle of slime for 3 rounds
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "TurnToSlime",
+      "bonusName": "TurnToSlime",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "Mugdulblub",
+      "boonSource": "InitialPatronBoon"
+    }
+
+* Roll 3-7: Maximize 2 hit point die rolls (prior or future)
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "MaximizeTwoHPRolls",
+      "bonusName": "MaximizeTwoHPRolls",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "Mugdulblub",
+      "boonSource": "InitialPatronBoon"
+    }
+
+* Roll 8-9: +2 to Dexterity or Constitution stat
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "StatBonus",
+      "bonusName": "StatBonus",
+      "bonusTo": "DEX:+2",
+      "gainedAtLevel": 1,
+      "boonPatron": "Mugdulblub",
+      "boonSource": "InitialPatronBoon"
+    }
+
+    Alternate is bonusTo: "CON:+2"
+
+* Roll 10-11: Become immune to 1: acid, cold, poison
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "ImmuneToEnergyType",
+      "bonusName": "ImmuneToEnergyType",
+      "bonusTo": "acid",
+      "gainedAtLevel": 1,
+      "boonPatron": "Mugdulblub",
+      "boonSource": "InitialPatronBoon"
+    }
+
+    Alternates are bonusTo = "cold" or "poison"
+
+* Roll 12: Choose one option or +2 points to distribute to stats
+
+I cheated... ShadowDarklings doesn't actually let you roll a 12 on this table as it was becoming a nightmare to support the nested bonuses.
+
+
+** Shune the Vile Patron Talents Bonuses:
+
+* Roll 2:	1/day, read the mind of a creature you touch for 3 rounds
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "ReadMindTouch",
+      "bonusName": "ReadMindTouch",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "Shune the Vile",
+      "boonSource": "InitialPatronBoon"
+    }
+
+* Roll 3-7: Learn a wizard spell, tier = half your level. Cast it with INT
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "LearnSpellFromPatron",
+      "bonusName": "Alarm",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "Shune the Vile",
+      "boonSource": "InitialPatronBoon"
+    }
+
+    Selected spell is in the bonusName field.
+
+* Roll 8-9: +2 to Dexterity or Intelligence stat
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "StatBonus",
+      "bonusName": "StatBonus",
+      "bonusTo": "DEX:+2",
+      "gainedAtLevel": 1,
+      "boonPatron": "Shune the Vile",
+      "boonSource": "InitialPatronBoon"
+    }
+
+    Alternate is bonusTo = "INT:+2"
+
+* Roll 10-11: +1 XP whenever you learn a valuable or significant secret (reroll duplicates)
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "XPForSecret",
+      "bonusName": "XPForSecret",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "Shune the Vile",
+      "boonSource": "InitialPatronBoon"
+    }
+
+* Roll 12: 
+
+I cheated... ShadowDarklings doesn't actually let you roll a 12 on this table as it was becoming a nightmare to support the nested bonuses.
+
+
+** Titania Patron Talents Bonuses:
+
+* Roll 2: 1/day, hypnotize a LV 5 or less creature for 3 rounds
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "Hypnotize3Rounds",
+      "bonusName": "Hypnotize3Rounds",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "Titania",
+      "boonSource": "InitialPatronBoon"
+    }
+
+* Roll 3-7: Learn to wield a longbow or gain +1 to ranged attacks
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "LongbowOrPlus1Ranged",
+      "bonusName": "LearnWeapon",
+      "bonusTo": "Longbow",
+      "gainedAtLevel": 1,
+      "boonPatron": "Titania",
+      "boonSource": "InitialPatronBoon"
+    }
+
+or
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "LongbowOrPlus1Ranged",
+      "bonusName": "Plus1ToHit",
+      "bonusTo": "Ranged attacks",
+      "gainedAtLevel": 1,
+      "boonPatron": "Titania",
+      "boonSource": "InitialPatronBoon"
+    }
+
+* Roll 8-9: +2 to Dexterity or Charisma stat
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "StatBonus",
+      "bonusName": "StatBonus",
+      "bonusTo": "DEX:+2",
+      "gainedAtLevel": 1,
+      "boonPatron": "Titania",
+      "boonSource": "InitialPatronBoon"
+    }
+
+    Alternate is bonusTo = "CHA:+2"
+
+* Roll 10-11: Hostile spells that target you are always hard to cast (reroll duplicates)
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "HostileSpellsHard",
+      "bonusName": "HostileSpellsHard",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "Titania",
+      "boonSource": "InitialPatronBoon"
+    }
+
+* Roll 12: 	Choose one option or +2 points to distribute to stats
+
+I cheated... ShadowDarklings doesn't actually let you roll a 12 on this table as it was becoming a nightmare to support the nested bonuses.
+
+** The Willowman Patron Talents Bonuses:
+
+* Roll 2: 1/day, teleport to a far location you see as your move
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "TeleportToFar",
+      "bonusName": "TeleportToFar",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "The Willowman",
+      "boonSource": "InitialPatronBoon"
+    }
+
+* Roll 3-7: +1 to melee or ranged attacks
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "Plus1ToHit",
+      "bonusName": "Plus1ToHit",
+      "bonusTo": "Melee attacks",
+      "gainedAtLevel": 1,
+      "boonPatron": "The Willowman",
+      "boonSource": "InitialPatronBoon"
+    }
+
+or 
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "Plus1ToHit",
+      "bonusName": "Plus1ToHit",
+      "bonusTo": "Ranged attacks",
+      "gainedAtLevel": 1,
+      "boonPatron": "The Willowman",
+      "boonSource": "InitialPatronBoon"
+    }
+
+* Roll 8-9: +2 to Strength or Dexterity stat
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "StatBonus",
+      "bonusName": "StatBonus",
+      "bonusTo": "STR:+2",
+      "gainedAtLevel": 1,
+      "boonPatron": "The Willowman",
+      "boonSource": "InitialPatronBoon"
+    }
+
+    Alternate is bonusTo = "DEX:+2"
+
+* Roll 10-11: 1/day, force a close being to check morale, even if immune
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "ForceMoraleCheck",
+      "bonusName": "ForceMoraleCheck",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "The Willowman",
+      "boonSource": "InitialPatronBoon"
+    }
+
+* Roll 12: Choose one option or +2 points to distribute to stats
+
+I cheated... ShadowDarklings doesn't actually let you roll a 12 on this table as it was becoming a nightmare to support the nested bonuses.
+
+
+** Warlock Talent Bonuses:
+In addition to a Patron and a Patron Boon Talent, Warlocks have a choice of a Warlock Talent or another Patron Boon Talent at 1st, 3rd, 5th, etc. levels.
+
+* Roll 2: Roll a Patron Boon from any patron; an unexplained gift
+This is implemented as a Warlock Talent Bonus plus an accompanying Patron Boon Bonus:
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Talent",
+      "gainedAtLevel": 1,
+      "name": "GainRandomBoon",
+      "bonusTo": "",
+      "bonusName": "GainRandomBoon"
+    },
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "XPForSecret",
+      "bonusName": "XPForSecret",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "Shune the Vile",
+      "boonSource": "WarlockTalentRandomBoon"
+    }
+
+* Roll 3-6: Add +1 point to two stats (they must be different)
+Implemented as a pair of stat bonus Talents: e.g: 
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Talent",
+      "name": "StatBonus-1",
+      "bonusName": "StatBonus",
+      "bonusTo": "STR:+1",
+      "gainedAtLevel": 1
+    },
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Talent",
+      "name": "StatBonus-2",
+      "bonusName": "StatBonus",
+      "bonusTo": "DEX:+1",
+      "gainedAtLevel": 1
+    }
+
+* Roll 7-9: +1 to melee or ranged attacks
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Talent",
+      "gainedAtLevel": 1,
+      "name": "Plus1ToHit",
+      "bonusTo": "Melee attacks",
+      "bonusName": "Plus1ToHit"
+    }
+
+or
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Talent",
+      "gainedAtLevel": 1,
+      "name": "Plus1ToHit",
+      "bonusTo": "Ranged attacks",
+      "bonusName": "Plus1ToHit"
+    }
+
+* Roll 10-11: Roll two Patron Boons and choose one to keep
+Implemented as Warlock Talent and a Patron Talent: 
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Talent",
+      "gainedAtLevel": 1,
+      "name": "RollTwoBoonsAndKeepOne",
+      "bonusTo": "",
+      "bonusName": "RollTwoBoonsAndKeepOne"
+    },
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Boon",
+      "name": "StatBonus",
+      "bonusName": "StatBonus",
+      "bonusTo": "STR:+2",
+      "gainedAtLevel": 1,
+      "boonPatron": "The Willowman",
+      "boonSource": "WarlockTalentRollTwoBoonsAndKeepOne"
+    }
+
+
+
+* Roll 12: Choose a talent or +2 points to distribute to stats
+I cheated... ShadowDarklings doesn't actually let you roll a 12 on this table as it was becoming a nightmare to support the nested bonuses.
+I only provided the choose +2 stat increase option:
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Talent",
+      "gainedAtLevel": 1,
+      "name": "+2 Stat Points",
+      "bonusTo": "",
+      "bonusName": "+2 Stat Points"
+    },
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Talent",
+      "name": "StatBonus-1",
+      "bonusName": "StatBonus",
+      "bonusTo": "STR:+1",
+      "gainedAtLevel": 1
+    },
+    {
+      "sourceType": "Class",
+      "sourceName": "Warlock",
+      "sourceCategory": "Talent",
+      "name": "StatBonus-2",
+      "bonusName": "StatBonus",
+      "bonusTo": "DEX:+1",
+      "gainedAtLevel": 1
+    }
+
+
+
+** Example Human Ambition Knight Talent or Boon Bonus (gained for being a 1st level Human): 
+
+* Example where user chose a Warlock Talent:
+
+{
+      "sourceType": "Ancestry",
+      "sourceName": "Human Ambition",
+      "sourceCategory": "TalentOrBoon",
+      "name": "ChooseWarlockTalentOrPatronBoon",
+      "bonusName": "",
+      "bonusTo": "WarlockTalent",
+      "gainedAtLevel": 1
+    },
+    {
+      "sourceType": "Ancestry",
+      "sourceName": "Human Ambition",
+      "sourceCategory": "Talent",
+      "gainedAtLevel": 1,
+      "name": "Plus1ToHit",
+      "bonusTo": "Melee attacks",
+      "bonusName": "Plus1ToHit"
+    }
+
+* Example where user chose a Patron Boon:
+
+{
+      "sourceType": "Ancestry",
+      "sourceName": "Human Ambition",
+      "sourceCategory": "TalentOrBoon",
+      "name": "ChooseWarlockTalentOrPatronBoon",
+      "bonusName": "",
+      "bonusTo": "PatronBoon",
+      "gainedAtLevel": 1
+    },
+    {
+      "sourceType": "Ancestry",
+      "sourceName": "Human Ambition",
+      "sourceCategory": "Boon",
+      "name": "TeleportToFar",
+      "bonusName": "TeleportToFar",
+      "bonusTo": "",
+      "gainedAtLevel": 1,
+      "boonPatron": "The Willowman",
+      "boonSource": "StandardBoon"
+    }

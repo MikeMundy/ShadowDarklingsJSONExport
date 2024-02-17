@@ -1,0 +1,134 @@
+BONUSES FOR PRIESTS FOR www.ShadowDarklings.net:
+
+These bonuses are all gained via Priest Talent rolls. The versions given below are all for the 'standard' Talent that every Priest gets
+at each odd-numbered level, but a Priest will also recieve an extra Priest Talent if they are Human (see at the end for an example):
+
+** All new standard Priest Talent Bonuses (gained for being a 1st level Priest)
+
+NOTE: The Bard's Turn Undead, Deity, and Spellcasting abilities are not represented as bonuses, as every Priest have them and they include no choices or
+options. 
+
+** Priest Talent Bonuses:
+
+* Roll 2: Gain advantage on casting one spell you know
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Priest",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "AdvOnCastOneSpell",
+    "bonusTo": "AdvOnCastOneSpell",
+    "bonusName": "Turn Undead"
+  }
+
+* Roll 3-6: +1 to melee or ranged attacks
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Priest",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "Plus1ToHit",
+    "bonusTo": "Melee attacks",
+    "bonusName": "Plus1ToHit"
+  }
+
+  or
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Priest",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "Plus1ToHit",
+    "bonusTo": "Ranged attacks",
+    "bonusName": "Plus1ToHit"
+  }
+
+* Roll 7-9: +1 to priest spellcasting checks
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Priest",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "Plus1ToCastingSpells",
+    "bonusTo": "Priest",
+    "bonusName": "Plus1ToCastingSpells"
+  }
+
+* Roll 10-11: +2 to Strength or Wisdom stat
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Priest",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "StatBonus",
+    "bonusTo": "STR:+2",
+    "bonusName": "StatBonus"
+  }
+
+  Alternate is bonusTo = "WIS:+2"
+
+* Roll 12: 	Choose a talent or +2 points to distribute to stats
+
+A chosen talent will be saved as the standard bonus chosen. 
+
++2 stat points are saved as a pair of additional stat bonus bonuses:
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Priest",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "+2 Stat Points",
+    "bonusTo": "",
+    "bonusName": "+2 Stat Points"
+  },
+  {
+    "sourceType": "Class",
+    "sourceName": "Priest",
+    "sourceCategory": "Talent",
+    "name": "StatBonus-1",
+    "bonusName": "StatBonus",
+    "bonusTo": "STR:+1",
+    "gainedAtLevel": 1
+  },
+  {
+    "sourceType": "Class",
+    "sourceName": "Priest",
+    "sourceCategory": "Talent",
+    "name": "StatBonus-2",
+    "bonusName": "StatBonus",
+    "bonusTo": "DEX:+1",
+    "gainedAtLevel": 1
+  }
+
+** Example Human Ambition Priest Talent Bonus (gained for being a 1st level Human): 
+
+  {
+    "sourceType": "Ancestry",
+    "sourceName": "Human Ambition",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "Plus1ToCastingSpells",
+    "bonusTo": "Priest",
+    "bonusName": "Plus1ToCastingSpells"
+  }
+
+** Example Priest Spell Known Bonus:
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Priest",
+    "sourceCategory": "Ability",
+    "name": "Spell: Priest, Tier 1, Spell 1",
+    "bonusName": "Cure Wounds",
+    "bonusTo": "Tier:1, Spell:1",
+    "gainedAtLevel": 1
+  }
+
+
+

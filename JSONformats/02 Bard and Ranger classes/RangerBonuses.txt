@@ -1,0 +1,91 @@
+BONUSES FOR RANGERS FOR www.ShadowDarklings.net:
+
+These bonuses are all gained via Ranger Talent rolls. The versions given below are all for the 'standard' Talent that every Ranger gets,
+but a character can also recieve an extra Ranger Talent if they are Human (see at the end for an example):
+
+** All new standard Ranger Talent Bonuses (gained for being a 1st level Ranger)
+
+NOTE: The Ranger's Wayfinder and Herbalist abilities are not represented as bonuses, as every Ranger has them and they include no choices or
+options. If the imported character is a Ranger, you'll have to include adding Wayfinder and Herbalist when you import them.
+
+* Roll 2: 'You deal d12 damage with one weapon type you choose': 
+The bonusTo contains the name of the weapon, followed by semicolon, followed by the die type that the weapon's damage is increased to.
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Ranger",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "SetWeaponTypeDamage",
+    "bonusName": "SetWeaponTypeDamage",
+    "bonusTo": "Longbow:12"
+  },
+
+* Roll 3-7: '+1 to attacks and damage with melee or ranged weapons'
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Ranger",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "Plus1ToHitAndDamage",
+    "bonusName": "Plus1ToHitAndDamage",
+    "bonusTo": "Melee attacks"
+  }
+
+or 
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Ranger",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "Plus1ToHitAndDamage",
+    "bonusName": "Plus1ToHitAndDamage",
+    "bonusTo": "Ranged attacks"
+  }
+
+* Roll 8-9: '+2 to Strength, Dexterity, or Intelligence'
+
+Standard stat bonus; i.e:
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Ranger",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "StatBonus",
+    "bonusName": "StatBonus",
+    "bonusTo": "STR:+2"
+  }
+
+* Roll 10-11: 'Reduce the DC of your herbalism talent checks by one step'
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Ranger",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "ReduceHerbalismDC",
+    "bonusTo": "",
+    "bonusName": "ReduceHerbalismDC"
+  }
+
+* Roll 12: 'Choose a talent or +2 points to distribute to stats'
+
+Will be saved as the standard bonus chosen. 
+
+
+** Example Human Ambition Ranger Talent Bonus (gained for being a 1st level Human): 
+
+[
+  {
+    "sourceType": "Ancestry",
+    "sourceName": "Human Ambition",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "SetWeaponTypeDamage",
+    "bonusName": "SetWeaponTypeDamage",
+    "bonusTo": "Dagger:12"
+  }
+]

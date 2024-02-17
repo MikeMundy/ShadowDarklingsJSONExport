@@ -1,0 +1,133 @@
+BONUSES FOR WIZARDS FOR www.ShadowDarklings.net:
+
+These bonuses are all gained via Wizard Talent rolls. The versions given below are all for the 'standard' Talent that every Wizard gets
+at each odd-numbered level, but a Wizard will also recieve an extra Wizard Talent if they are Human (see at the end for an example):
+
+** All new standard Wizard Talent Bonuses (gained for being a 1st level Wizard)
+
+NOTE: The Wizard's Learning Spells and Spellcasting abilities are not represented as bonuses, as every Wizard haves them and they include no choices or
+options. 
+
+** Wizard Talent Bonuses:
+
+* Roll 2: Make one random magic item (see GM Quickstart Guide)
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Wizard",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "MakeRandomMagicItem",
+    "bonusTo": "",
+    "bonusName": "MakeRandomMagicItem"
+  }
+
+* Roll 3-7: +2 to Intelligence stat or +1 to wizard spellcasting checks
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Wizard",
+    "sourceCategory": "Talent",
+    "name": "PlusTwoIntOrPlusOneWizCasting",
+    "bonusName": "StatBonus",
+    "bonusTo": "INT:+2",
+    "gainedAtLevel": 1
+  }
+
+or
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Wizard",
+    "sourceCategory": "Talent",
+    "name": "PlusTwoIntOrPlusOneWizCasting",
+    "bonusName": "Plus1ToCastingSpells",
+    "bonusTo": "Wizard",
+    "gainedAtLevel": 1,
+    "bonusAmount": 1
+  }
+
+* Roll 8-9: Gain advantage on casting one spell you know
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Wizard",
+    "sourceCategory": "Talent",
+    "name": "AdvOnCastOneSpell",
+    "bonusName": "Charm Person",
+    "bonusTo": "AdvOnCastOneSpell",
+    "gainedAtLevel": 1
+  }
+
+* Roll 10-11: Learn one additional wizard spell of any tier you know
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Wizard",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "LearnExtraSpell",
+    "bonusTo": "PickExtraSpell",
+    "bonusName": "Feather Fall"
+  }
+
+* Roll 12: 	Choose a talent or +2 points to distribute to stats
+
+A chosen talent will be saved as the standard bonus chosen. 
+
++2 stat points are saved as a pair of additional stat bonus bonuses:
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Wizard",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "+2 Stat Points",
+    "bonusTo": "",
+    "bonusName": "+2 Stat Points"
+  },
+  {
+    "sourceType": "Class",
+    "sourceName": "Wizard",
+    "sourceCategory": "Talent",
+    "name": "StatBonus-1",
+    "bonusName": "StatBonus",
+    "bonusTo": "INT:+1",
+    "gainedAtLevel": 1
+  },
+  {
+    "sourceType": "Class",
+    "sourceName": "Wizard",
+    "sourceCategory": "Talent",
+    "name": "StatBonus-2",
+    "bonusName": "StatBonus",
+    "bonusTo": "CON:+1",
+    "gainedAtLevel": 1
+  }
+
+** Example Human Ambition Wizard Talent Bonus (gained for being a 1st level Human): 
+
+  {
+    "sourceType": "Ancestry",
+    "sourceName": "Human Ambition",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "MakeRandomMagicItem",
+    "bonusTo": "",
+    "bonusName": "MakeRandomMagicItem"
+  }
+
+** Example Wizard Spell Known Bonus:
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Wizard",
+    "sourceCategory": "Ability",
+    "name": "Spell: Wizard, Tier 1, Spell 1",
+    "bonusName": "Charm Person",
+    "bonusTo": "Tier:1, Spell:1",
+    "gainedAtLevel": 1
+  }
+
+
+

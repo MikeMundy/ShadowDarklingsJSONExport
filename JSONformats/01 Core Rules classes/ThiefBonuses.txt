@@ -1,0 +1,108 @@
+BONUSES FOR THIEVES FOR www.ShadowDarklings.net:
+
+These bonuses are all gained via Thief Talent rolls. The versions given below are all for the 'standard' Talent that every Thief gets
+at each odd-numbered level, but a Thief will also recieve an extra Thief Talent if they are Human (see at the end for an example):
+
+** All new standard Thief Talent Bonuses (gained for being a 1st level Thief)
+
+NOTE: The Thief's Bckstab and Thievery abilities is not represented as bonuses, as every Thief have them and they include no choices or
+options. 
+
+** Thief Talent Bonuses:
+
+* Roll 2: Gain advantage on initiative rolls (reroll duplicates)
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Thief",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "AdvOnInitiative",
+    "bonusTo": "",
+    "bonusName": "AdvOnInitiative"
+  }
+
+
+* Roll 3-6: Your Backstab deals +1 dice of damage
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Thief",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "BackstabIncrease",
+    "bonusTo": "",
+    "bonusName": "BackstabIncrease"
+  }
+
+* Roll 7-9: +2 to Strength, Dexterity, or Charisma stat
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Thief",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "StatBonus",
+    "bonusTo": "STR:+2",
+    "bonusName": "StatBonus"
+  }
+
+  Alternates are bonusTo = "DEX:+2" or "CHA:+2"
+
+* Roll 10-11: +1 to melee and ranged attacks
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Thief",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "Plus1ToHit",
+    "bonusTo": "Melee and ranged attacks",
+    "bonusName": "Plus1ToHit"
+  }
+
+* Roll 12: 	Choose a talent or +2 points to distribute to stats
+
+A chosen talent will be saved as the standard bonus chosen. 
+
++2 stat points are saved as a pair of additional stat bonus bonuses:
+
+ {
+    "sourceType": "Class",
+    "sourceName": "Thief",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "+2 Stat Points",
+    "bonusTo": "",
+    "bonusName": "+2 Stat Points"
+  },
+  {
+    "sourceType": "Class",
+    "sourceName": "Thief",
+    "sourceCategory": "Talent",
+    "name": "StatBonus-1",
+    "bonusName": "StatBonus",
+    "bonusTo": "DEX:+1",
+    "gainedAtLevel": 1
+  },
+  {
+    "sourceType": "Class",
+    "sourceName": "Thief",
+    "sourceCategory": "Talent",
+    "name": "StatBonus-2",
+    "bonusName": "StatBonus",
+    "bonusTo": "STR:+1",
+    "gainedAtLevel": 1
+  }
+
+** Example Human Ambition Thief Talent Bonus (gained for being a 1st level Human): 
+
+  {
+    "sourceType": "Ancestry",
+    "sourceName": "Human Ambition",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "AdvOnInitiative",
+    "bonusTo": "",
+    "bonusName": "AdvOnInitiative"
+  }

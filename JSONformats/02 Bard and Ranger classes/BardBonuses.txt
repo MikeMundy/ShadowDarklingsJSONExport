@@ -1,0 +1,100 @@
+BONUSES FOR BARDS FOR www.ShadowDarklings.net:
+
+These bonuses are all gained via Bard Talent rolls. The versions given below are all for the 'standard' Talent that every Bard gets
+at each odd-numbered level, but a Bard will also recieve an extra Bard Talent if they are Human (see at the end for an example):
+
+** All new standard Bard Talent Bonuses (gained for being a 1st level Bard)
+
+NOTE: The Bard's Bardic Arts, Magical Dabbler, Perform and Prolific abilities are not represented as bonuses, as every Bard has them and they include no choices or
+options. If the imported character is a Bard, you'll have to include adding Bardic Arts, Magical Dabbler, Perform and Prolific when you import them.
+
+* Roll 2: 'You find a random priest or wizard wand (you choose)': 
+
+{
+    "sourceType": "Class",
+    "sourceName": "Bard",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "FindRandomWand",
+    "bonusTo": "",
+    "bonusName": "FindRandomWand"
+  }
+
+* Roll 3-6: '+1 to melee and ranged attacks or +1 to Magical Dabbler rolls'
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Bard",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "Plus1ToAttacksOrPlus1ToMagicalDabbler",
+    "bonusName": "Plus1ToHit",
+    "bonusTo": "Melee and ranged attacks"
+  }
+
+or 
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Bard",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "Plus1ToAttacksOrPlus1ToMagicalDabbler",
+    "bonusName": "Plus1MagicalDabbler",
+    "bonusTo": "MagicalDabbler",
+    "bonusAmount": 1
+  }
+
+* Roll 7-9: '+2 points to distribute to stats'
+
+Standard pair of +1 StatBonus-1 and StatBonus-2 bonuses; i.e:
+
+{
+    "sourceType": "Class",
+    "sourceName": "Bard",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "StatBonus-1",
+    "bonusName": "StatBonus",
+    "bonusTo": "STR:+1"
+  },
+  {
+    "sourceType": "Class",
+    "sourceName": "Bard",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "StatBonus-2",
+    "bonusName": "StatBonus",
+    "bonusTo": "DEX:+1"
+  }
+
+* Roll 10-11: 'Reduce the DC of your Perform effects by 3 each (reroll duplicates)'
+
+  {
+    "sourceType": "Class",
+    "sourceName": "Bard",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "ReducePerformDC",
+    "bonusTo": "",
+    "bonusName": "ReducePerformDC"
+  }
+
+* Roll 12: 'Choose a talent or +2 points to distribute to stats'
+
+Will be saved as the standard bonus chosen. 
+
+
+** Example Human Ambition Bard Talent Bonus (gained for being a 1st level Human): 
+
+[
+  {
+    "sourceType": "Ancestry",
+    "sourceName": "Human Ambition",
+    "sourceCategory": "Talent",
+    "gainedAtLevel": 1,
+    "name": "FindRandomWand",
+    "bonusTo": "",
+    "bonusName": "FindRandomWand"
+  }
+]

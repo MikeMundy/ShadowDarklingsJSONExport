@@ -1,0 +1,156 @@
+BONUSES FOR KNIGHT OF ST YDRIS FOR www.ShadowDarklings.net:
+
+These bonuses are all gained via Knight Talent rolls. The versions given below are all for the 'standard' Talent that every Knight gets
+at each odd-numbered level, but a Knight will also recieve an extra Knight Talent if they are Human (see at the end for an example).
+Knights also gain Witch spells at 3rd level; an example is provided at the end of this file. 
+
+** All new standard Knight Talent Bonuses (gained for being a 1st level Knight)
+
+NOTE: The Knight's Demonic Possession and Spellcasting abilities are not represented as bonuses, as every Bard has them and they include no choices or
+options. If the imported character is a Knight, you'll have to include Demonic Possession and Spellcasting when you import them.
+
+* Roll 2: 'Your Demonic Possession bonus increases by 1 point': 
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Knight of St. Ydris",
+      "sourceCategory": "Talent",
+      "gainedAtLevel": 1,
+      "name": "Plus1DemonicPossession",
+      "bonusTo": "",
+      "bonusName": "Plus1DemonicPossession"
+    }
+
+* Roll 3-6: '+1 to melee or ranged attacks'
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Knight of St. Ydris",
+      "sourceCategory": "Talent",
+      "gainedAtLevel": 1,
+      "name": "Plus1ToHit",
+      "bonusTo": "Melee attacks",
+      "bonusName": "Plus1ToHit"
+    }
+
+or 
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Knight of St. Ydris",
+      "sourceCategory": "Talent",
+      "gainedAtLevel": 1,
+      "name": "Plus1ToHit",
+      "bonusTo": "Melee attacks",
+      "bonusName": "Plus1ToHit"
+    }
+
+* Roll 7-9: '+2 to Strength, Dexterity, or Constitution stat'
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Knight of St. Ydris",
+      "sourceCategory": "Talent",
+      "gainedAtLevel": 1,
+      "name": "StatBonus",
+      "bonusTo": "STR:+2",
+      "bonusName": "StatBonus"
+    }
+
+  or
+
+      {
+      "sourceType": "Class",
+      "sourceName": "Knight of St. Ydris",
+      "sourceCategory": "Talent",
+      "gainedAtLevel": 1,
+      "name": "StatBonus",
+      "bonusTo": "DEX:+2",
+      "bonusName": "StatBonus"
+    }
+
+or
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Knight of St. Ydris",
+      "sourceCategory": "Talent",
+      "gainedAtLevel": 1,
+      "name": "StatBonus",
+      "bonusTo": "CON:+2",
+      "bonusName": "StatBonus"
+    }
+
+* Roll 10-11: '+2 to Charisma stat or +1 to witch spellcasting checks'
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Knight of St. Ydris",
+      "sourceCategory": "Talent",
+      "gainedAtLevel": 1,
+      "name": "Plus2CHAOrPlus1Casting",
+      "bonusTo": "CHA:+2",
+      "bonusName": "StatBonus"
+    }
+
+or
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Knight of St. Ydris",
+      "sourceCategory": "Talent",
+      "gainedAtLevel": 1,
+      "name": "Plus2CHAOrPlus1Casting",
+      "bonusTo": "Witch",
+      "bonusName": "Plus1ToCastingSpells",
+      "bonusAmount": 1
+    }
+
+* Roll 12: 'Choose a talent or +2 points to distribute to stats'
+
+'Choose a Talent' Will be saved as the standard bonus chosen. 
+
++2 points to distribute is saved as a pair of stat bonuses:
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Knight of St. Ydris",
+      "sourceCategory": "Talent",
+      "name": "StatBonus-1",
+      "bonusName": "StatBonus",
+      "bonusTo": "STR:+1",
+      "gainedAtLevel": 1
+    },
+    {
+      "sourceType": "Class",
+      "sourceName": "Knight of St. Ydris",
+      "sourceCategory": "Talent",
+      "name": "StatBonus-2",
+      "bonusName": "StatBonus",
+      "bonusTo": "DEX:+1",
+      "gainedAtLevel": 1
+    }
+
+** Example Human Ambition Knight Talent Bonus (gained for being a 1st level Human): 
+
+    {
+      "sourceType": "Ancestry",
+      "sourceName": "Human Ambition",
+      "sourceCategory": "Talent",
+      "gainedAtLevel": 1,
+      "name": "Plus1DemonicPossession",
+      "bonusTo": "",
+      "bonusName": "Plus1DemonicPossession"
+    }
+
+  ** Example Knight's Witch Spell Bonus:
+
+    {
+      "sourceType": "Class",
+      "sourceName": "Witch",
+      "sourceCategory": "Ability",
+      "name": "Spell: Witch, Tier 1, Spell 1",
+      "bonusName": "Cauldron",
+      "bonusTo": "Tier:1, Spell:1",
+      "gainedAtLevel": 3
+    }
